@@ -7,6 +7,13 @@ export interface ContentSection {
   summary?: string;
 }
 
+export interface AuthorInfo {
+  name: string;
+  bio: string;
+  role: string;
+  links: { label: string; url: string; icon: string }[];
+}
+
 export interface ThanaData {
   introduction: ContentSection;
   history: ContentSection;
@@ -17,4 +24,5 @@ export interface ThanaData {
   economy: ContentSection;
   communication: ContentSection;
   notable: ContentSection;
+  author: AuthorInfo;
 }
